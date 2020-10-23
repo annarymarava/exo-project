@@ -1,0 +1,50 @@
+.wr-services-icon {
+    margin-top: 70px;
+    background-color: #000;
+    background-image: url("../media/services-icon/services-icon-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+}
+
+.services-block {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 140px;
+    padding-bottom: 164px;
+
+}
+
+.icon {
+    color: #fff;
+    width: 270px;
+
+    svg {
+        width: 100px;
+        height: 90px;
+        margin-bottom: 12px;
+    }
+
+    p {
+        font-family: "LatoLight", sans-serif;
+        font-weight: 300;
+        font-size: 17px;
+        line-height: 27px;
+        margin-bottom: 30px;
+    }
+
+    button {
+        font-family: "LatoBold", sans-serif;
+        color: #fff;
+
+        &:after {
+            content: "";
+            display: block;
+            width: 15px;
+            height: 2px;
+            background-color: #fff;
+        }
+    }
+
+
+}

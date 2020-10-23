@@ -1,0 +1,32 @@
+.wr-portfolio {
+    margin-top: 110px;
+}
+
+.portfolio-sorting {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.categories {
+    width: 520px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 130px;
+
+    li {
+        :hover {
+            border: 1px solid #696969;
+            padding: 5px 15px;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #2d2929;
+        font-family: "LatoRegular", sans-serif;
+        font-size: 18px;
+    }
+
+    
+}

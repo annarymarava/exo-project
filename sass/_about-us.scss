@@ -1,0 +1,66 @@
+.about-us {
+    padding-top: 85px;
+}
+
+.section-text-about {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 140px;
+
+    div {
+        width: 570px;
+    }
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    button {
+        width: 160px;
+        height: 53px;
+        border: 1px solid #2c2928;
+        border-radius: 7px;
+    }
+
+    p {
+        font-family: "LatoRegular", sans-serif;
+        font-weight: 400;
+        color: #2d2929;
+        font-size: 15px;
+        margin-bottom: 26px;
+        letter-spacing: 1.1px;
+    }  
+}
+
+.appeal-company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 130px;
+    border: 1px solid #a8a5a5;
+    height: 368px;
+
+    svg {
+        width: 80px;
+        height: 60px;   
+        margin-top: 60px;
+        margin-bottom: 32px;
+    }
+
+    p {
+        font-family: "LatoLight", sans-serif;
+        font-weight: 300;
+        font-size: 17px;
+        font-style: italic;
+        letter-spacing: 1px;
+        margin-top: 16px;
+    }
+
+    span {
+        font-family: "LatoBlack", sans-serif;
+        font-weight: 900;
+        font-size: 19px;
+        margin-top: 61px;
+    }
+}
