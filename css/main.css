@@ -845,7 +845,7 @@ button {
   border-radius: 50%;
   position: absolute;
   background-color: transparent;
-  top: 33%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   transition: 0.8s;
