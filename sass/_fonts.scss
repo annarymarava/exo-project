@@ -21,3 +21,28 @@
     url("../fonts/Lato-Regular.woff2") format("woff2");
     font-weight: 400;
 }
+
+@font-face {
+    font-family: "LatoBold";
+    src: url("../fonts/Lato-Bold.ttf") format("ttf"),
+    url("../fonts/Lato-Bold.woff") format("woff"),
+    url("../fonts/Lato-Bold.woff2") format("woff2");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "LatoLightItalic";
+    src: url("../fonts/Lato-LightItalic.ttf") format("ttf"),
+    url("../fonts/Lato-LightItalic.woff") format("woff"),
+    url("../fonts/Lato-LightItalic.woff2") format("woff2");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "LatoThin";
+    src: url("../fonts/Lato-Thin.ttf") format("ttf"),
+    url("../fonts/Lato-Thin.woff") format("woff"),
+    url("../fonts/Lato-Thin.woff2") format("woff2");
+    font-weight: 100;
+}

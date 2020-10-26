@@ -2,9 +2,156 @@
     margin-top: 110px;
 }
 
-.team-slide {
-    margin-top: 115px;
+.slide-container {
+    margin-top: 163px;
     display: flex;
     justify-content: space-between;
-    width: 270px;
+
+        h4 {
+        font-family: "LatoLight", sans-serif;
+        font-weight: 300;
+        font-size: 29px;
+        margin-top: 14px;
+        margin-bottom: 0;
+        text-align: center;
+        
+        }
+
+        p {
+        font-family: "LatoBold", sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        margin-top: 10px;
+        text-align: center;
+        margin: 0;
+        }
 }
+
+.photo-slide {
+    position: relative;
+}
+
+.photo-slide::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 270px;
+    height: 270px;
+    border-radius: 50%;
+    background-color: #373535;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.photo-slide:hover::before {
+    opacity: 0.5;
+}
+
+.photo-slide:hover {
+    .hover-icons {
+        opacity: 1;
+    }
+}
+
+
+.hover-icons {
+    width: 94px;
+    height: 94px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: transparent;
+    top: 33%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.8s;
+    opacity: 0;
+
+
+    svg {
+        height: 20px;
+        color: #fff;
+        position: absolute;
+    }
+
+    button {
+        width: 50%;
+        height: 50%;
+        background-color: #464646;
+        position: absolute;
+        transform: translate(-50%, -50%);
+    }
+
+    button, 
+    button:active, 
+    button:focus {
+    outline: none;
+}
+
+
+    
+}
+
+.hover-icons-1 {
+    top: 25%;
+    left: 25%;
+    border-top-left-radius: 100%;
+    transition: 0.8s;
+
+    &:hover {
+        background-color: #2584dc;
+    }
+
+    svg {
+        top: 50%;
+        left: 50%;
+    }
+}
+
+.hover-icons-2 {
+    top: 25%;
+    left: 75%;
+    border-top-right-radius: 100%;
+    transition: 0.8s;
+
+    &:hover {
+        background-color: #2f468f;
+    }
+
+    svg {
+        top: 50%;
+        right: 50%;
+    }
+}
+
+.hover-icons-3 {
+    top: 75%;
+    left: 25%;
+    border-bottom-left-radius: 100%;
+    transition: 0.8s;
+
+    &:hover { 
+        background-color: #ff1e1e;
+    }
+
+    svg {
+        bottom: 50%;
+        left: 50%;
+    }  
+}
+
+.hover-icons-4 {
+    top: 75%;
+    left: 75%;
+    border-bottom-right-radius: 100%;
+    transition: 0.8s;
+
+    &:hover {
+        background-color: #ff1ec7;
+    }
+
+    svg {
+        bottom: 50%;
+        right: 50%;
+    }
+}
+

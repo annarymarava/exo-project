@@ -4,12 +4,10 @@
     background-repeat: no-repeat;
     background-position: center; 
     background-size: cover;
-}
-
-.header::before {
-    content: "";
-    position: absolute;
-
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
     
 .header-body {
@@ -17,12 +15,15 @@
     justify-content: space-between;
 }
 
+.header {
+    padding-top: 80px;
+}
+
 .header-logo {
     font-family: "LatoBlack", sans-serif;
     font-size: 54px;
     font-weight: 900;
     color: #fff;
-    margin-top: 71px;
 }
 
 .burger-icon {
@@ -30,7 +31,6 @@
     width: 50px;
     height: 36px;
     z-index: 10;
-    margin-top: 88px;
 }
 
 .burger-icon:hover {
@@ -71,23 +71,39 @@
      background-color: #000;
      position: absolute;
      z-index: 20;
-     max-height: 100%;
+     height: 100vh;
      width: 29%;
-     top: -125%;
+     top: -150%;
      right: 0;
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     padding-top: 103px;
-     padding-bottom: 103px;
      transition: 0.3s;
  }
 
-.header-list li {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-bottom: 30px;
+
+.header-list { 
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    li {
+        width: 100%;
+    }
+
+    a {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        text-align: center;
+        display: block;
+    }
+
+    a:hover {
+        background-color: #313131;
+    }
 }
 
 .header-link {
@@ -108,18 +124,19 @@
 // }
 
 .wr-home {
-    padding-top: 396px;
-    padding-bottom: 174px;
     color: #fff;
+    padding-bottom: 100px;
 
     .wr-home-text {
         max-width: 470px;
+        position: relative;
     }
 
     h2 {
         font-family: "LatoBlack", sans-serif;
         font-size: 130px;
         font-weight: 900;
+        margin: 0;
     }
 
     p {
@@ -129,12 +146,16 @@
         line-height: 23px;
     }
 
-    span {
+    &:before {
+        content: "";
         display: block;
         width: 47px;
         height: 5px;
         background-color: #fff;
         border-radius: 7px;
-        margin-top: 27px;
-    }   
+        position: absolute;
+        bottom: 88px;
+        left: 473px;
+    }
+ 
 }

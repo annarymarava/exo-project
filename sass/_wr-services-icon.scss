@@ -7,22 +7,20 @@
     background-size: cover;
 }
 
-.services-block {
+.services-container {
     display: flex;
     justify-content: space-between;
     padding-top: 140px;
-    padding-bottom: 164px;
+    padding-bottom: 163px;
 
 }
 
-.icon {
+.services-container-icon {
     color: #fff;
-    width: 270px;
+    max-width: 270px;
 
     svg {
-        width: 100px;
         height: 90px;
-        margin-bottom: 12px;
     }
 
     p {

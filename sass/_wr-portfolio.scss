@@ -1,30 +1,33 @@
 .wr-portfolio {
-    margin-top: 110px;
+    margin-top: 65px;
 }
 
-.portfolio-sorting {
-    margin-top: 80px;
-    display: flex;
-    justify-content: center;
-}
+// .portfolio-sorting {
+//     margin-top: 80px;
+//     display: flex;
+//     justify-content: center;
+// }
 
 .categories {
-    width: 520px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-bottom: 130px;
+    margin-top: 115px;
+    list-style-type: none;
 
-    li {
-        :hover {
-            border: 1px solid #696969;
-            padding: 5px 15px;
-        }
+    button {
+    padding: 10px 15px;
+    letter-spacing: 1.4px;
+ }
+
+    button:hover {
+        border: 1px solid #696969;
+        padding: 8px 14px;
     }
 
     a {
         text-decoration: none;
         color: #2d2929;
-        font-family: "LatoRegular", sans-serif;
         font-size: 18px;
     }
 
