@@ -19,3 +19,14 @@ burger_icon.onclick = function () {
 // //     header_list.classList.remove('active');
 // //     back.classList.toggle('lock');
 // // }
+
+
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 4,
+    spaceBetween: 29,
+    freeMode: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+  });

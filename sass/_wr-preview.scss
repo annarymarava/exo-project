@@ -67,6 +67,16 @@
     border-radius: 3px;
 }
 
+.burger-icon:hover {
+    &:before,
+    &:after,
+    span {
+        background-color: #2d2929;
+        border: 1px solid #fff;   
+    }
+
+}
+
  .burger-menu {
      background-color: #000;
      position: absolute;
@@ -155,7 +165,7 @@
         border-radius: 7px;
         position: absolute;
         bottom: 88px;
-        left: 473px;
+        left: 284px;
     }
  
 }

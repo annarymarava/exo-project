@@ -42,6 +42,10 @@
             height: 2px;
             background-color: #fff;
         }
+
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 
 
