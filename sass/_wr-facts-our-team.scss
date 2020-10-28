@@ -1,0 +1,42 @@
+.wr-facts-our-team {
+    margin-top: 90px;
+    background-image: url("../media/facts-our-team/facts-our-team-bc.jpg");
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: cover;
+}
+
+.blocks-facts-our-team {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.block-facts {
+    padding-top: 145px;
+    padding-bottom: 140px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+
+    svg {
+        height: 100px;
+    }
+
+    span {
+        font-size: 55px;
+        font-family: "LatoBlack", sans-serif;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+
+    p {
+        font-size: 25px;
+        font-family: "LatoLight", sans-serif;
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,40 @@
+.wr-clients {
+    margin-top: 85px;
+
+    .hipster-says {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 60px;
+        border: 1px solid #a8a5a5;
+        padding: 45px 100px 70px;
+    
+        svg {
+            height: 45px;
+            margin-bottom: 50px;
+        }
+    
+        p {
+            font-family: "LatoLightItalic", sans-serif;
+            font-weight: 300;
+            font-size: 17px;
+            letter-spacing: 1.5px;
+            line-height: 30px;
+            margin-top: 0;
+            text-align: center;
+        }
+    
+        span {
+            font-family: "LatoLight", sans-serif;
+            font-weight: 300;
+            font-size: 23px;
+            margin-top: 50px;
+        }
+    }
+}
+
+.slider-container-logos {
+    padding: 155px 40px 5px 40px;
+    display: flex;
+    justify-content: space-between;
+}

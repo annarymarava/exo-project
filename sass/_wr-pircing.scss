@@ -1,0 +1,89 @@
+.wr-pircing {
+    margin-top: 60px;
+}
+
+.pircing-pay-blocks {
+    margin-top: 233px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pay-pack-block {
+    width: 31%;  
+    position: relative;
+
+    button {
+        width: 100%;
+        height: 80px;
+        background-color: #464141;
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            border-radius: 5px;
+            font-family: "LatoLight", sans-serif;
+            font-size: 20px;
+        }
+
+        svg {
+            height: 25px;
+            padding-left: 15px;
+        }
+
+        &:hover span,
+        &:hover svg {
+            transform: scale(1.2);
+        }
+    }
+
+}
+
+.pay-sum {
+    display: block;
+    height: 194px;
+    width: 194px;
+    border-radius: 50%;
+    background-color: #464141;
+    position: absolute;
+    top: -20%;
+    left: 24%;
+}
+
+.pay-sum span {
+    color: #fff;
+    font-family: "LatoLight", sans-serif;
+    font-size: 35px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pay-pack {
+    padding-top: 125px;
+    padding-bottom: 30px;
+    border: 2px solid #464141;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span {
+        font-family: "LatoLight", sans-serif;
+        font-size: 30px;
+        margin-bottom: 73px;
+        letter-spacing: 1.2px;
+    }
+
+    p {
+        font-family: "LatoRegular", sans-serif;
+        font-size: 18px;
+        margin-top: 0;
+        margin-bottom: 30px;
+        letter-spacing: 1.2px;
+    }
+
+}

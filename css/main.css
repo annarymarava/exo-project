@@ -1525,4 +1525,301 @@ button.swiper-pagination-bullet {
   backface-visibility: hidden;
 }
 
+.wr-facts-our-team {
+  margin-top: 90px;
+  background-image: url("../media/facts-our-team/facts-our-team-bc.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.blocks-facts-our-team {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.block-facts {
+  padding-top: 145px;
+  padding-bottom: 140px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.block-facts svg {
+  height: 100px;
+}
+.block-facts span {
+  font-size: 55px;
+  font-family: "LatoBlack", sans-serif;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+.block-facts p {
+  font-size: 25px;
+  font-family: "LatoLight", sans-serif;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 0;
+}
+
+.wr-clients {
+  margin-top: 85px;
+}
+.wr-clients .hipster-says {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 60px;
+  border: 1px solid #a8a5a5;
+  padding: 45px 100px 70px;
+}
+.wr-clients .hipster-says svg {
+  height: 45px;
+  margin-bottom: 50px;
+}
+.wr-clients .hipster-says p {
+  font-family: "LatoLightItalic", sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  letter-spacing: 1.5px;
+  line-height: 30px;
+  margin-top: 0;
+  text-align: center;
+}
+.wr-clients .hipster-says span {
+  font-family: "LatoLight", sans-serif;
+  font-weight: 300;
+  font-size: 23px;
+  margin-top: 50px;
+}
+
+.slider-container-logos {
+  padding: 155px 40px 5px 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.wr-pircing {
+  margin-top: 60px;
+}
+
+.pircing-pay-blocks {
+  margin-top: 233px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.pay-pack-block {
+  width: 31%;
+  position: relative;
+}
+.pay-pack-block button {
+  width: 100%;
+  height: 80px;
+  background-color: #464141;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.pay-pack-block button span {
+  border-radius: 5px;
+  font-family: "LatoLight", sans-serif;
+  font-size: 20px;
+}
+.pay-pack-block button svg {
+  height: 25px;
+  padding-left: 15px;
+}
+.pay-pack-block button:hover span, .pay-pack-block button:hover svg {
+  transform: scale(1.2);
+}
+
+.pay-sum {
+  display: block;
+  height: 194px;
+  width: 194px;
+  border-radius: 50%;
+  background-color: #464141;
+  position: absolute;
+  top: -20%;
+  left: 24%;
+}
+
+.pay-sum span {
+  color: #fff;
+  font-family: "LatoLight", sans-serif;
+  font-size: 35px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.pay-pack {
+  padding-top: 125px;
+  padding-bottom: 30px;
+  border: 2px solid #464141;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pay-pack span {
+  font-family: "LatoLight", sans-serif;
+  font-size: 30px;
+  margin-bottom: 73px;
+  letter-spacing: 1.2px;
+}
+.pay-pack p {
+  font-family: "LatoRegular", sans-serif;
+  font-size: 18px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  letter-spacing: 1.2px;
+}
+
+.wr-contacts {
+  margin-top: 65px;
+}
+
+.maps-container {
+  margin-top: 125px;
+}
+.maps-container iframe {
+  width: 100%;
+  height: 475px;
+}
+
+.contact-info {
+  margin-top: 75px;
+  width: 48%;
+}
+.contact-info span {
+  font-family: "LatoThin", sans-serif;
+  font-size: 20px;
+}
+.contact-info div svg {
+  height: 35px;
+  color: #2d2929;
+}
+.contact-info div p {
+  font-family: "LatoLight", sans-serif;
+  font-size: 16px;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-info-phone,
+.contact-info-email,
+.contact-info-address {
+  border: 1px solid #2d2929;
+  margin-bottom: 17px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0 16px 15px;
+}
+.contact-info-phone p,
+.contact-info-email p,
+.contact-info-address p {
+  font-family: "LatoLight", sans-serif;
+  letter-spacing: 1.2px;
+}
+.contact-info-phone div,
+.contact-info-email div,
+.contact-info-address div {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-info-phone,
+.subscribe-name {
+  margin-top: 30px;
+}
+
+.subscribe {
+  margin-top: 75px;
+  width: 48%;
+}
+.subscribe span {
+  font-family: "LatoThin", sans-serif;
+  font-size: 20px;
+}
+.subscribe input {
+  width: 100%;
+  border: none;
+}
+
+.subscribe-name,
+.subscribe-email,
+.subscribe-submit {
+  border: 1px solid #2d2929;
+  margin-bottom: 19px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0 30px 15px;
+}
+.subscribe-name span,
+.subscribe-email span,
+.subscribe-submit span {
+  font-family: "LatoRegular", sans-serif;
+  font-size: 16px;
+  padding-right: 15px;
+}
+
+.subscribe-submit {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background-color: #2d2929;
+}
+.subscribe-submit svg {
+  height: 40px;
+  color: #fff;
+}
+.subscribe-submit button {
+  width: 100%;
+  height: 100%;
+  padding: 19px 0 19px 15px;
+}
+.subscribe-submit button:hover svg {
+  transform: scale(1.2);
+}
+
+.subscribe-name,
+.subscribe-email {
+  position: relative;
+}
+.subscribe-name span::before,
+.subscribe-email span::before {
+  content: "click here and type...";
+  position: absolute;
+  top: 50%;
+  left: 15%;
+  transform: translateY(-50%);
+  font-family: "LatoLightItalic", sans-serif;
+  color: #bdbdbd;
+  letter-spacing: 1.2px;
+}
+.subscribe-name input:focus span::before,
+.subscribe-email input:focus span::before {
+  color: transparent;
+}
+.subscribe-name input:focus input,
+.subscribe-email input:focus input {
+  outline: none;
+}
+
 /*# sourceMappingURL=main.css.map */
