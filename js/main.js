@@ -21,12 +21,20 @@ burger_icon.onclick = function () {
 // // }
 
 
-var swiper = new Swiper('.swiper-container', {
+var swiper = new Swiper('.swiper-container-team', {
     slidesPerView: 4,
     spaceBetween: 29,
     freeMode: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
+    },
+  });
+
+  var swiper = new Swiper('.swiper-container-clients', {
+    slidesPerView: 6,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
     },
   });
