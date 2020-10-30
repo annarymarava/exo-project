@@ -71,4 +71,18 @@
     width: 25px;
     height: 25px;
     color: #000;
+    position: absolute;
+    left: 29px
+}
+
+.swiper-button-prev::before {
+    content: "";
+    background-image: url("../media/cliens/caret-left-solid.svg");
+    background-repeat: no-repeat;
+    display: block;
+    width: 25px;
+    height: 25px;
+    color: #000;
+    position: absolute;
+    left: -11px
 }

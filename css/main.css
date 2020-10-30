@@ -1142,6 +1142,7 @@ button {
 
 .swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
   content: "prev";
+  color: transparent;
 }
 
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
@@ -1151,6 +1152,7 @@ button {
 
 .swiper-button-next:after, .swiper-container-rtl .swiper-button-prev:after {
   content: "next";
+  color: transparent;
 }
 
 .swiper-button-next.swiper-button-white, .swiper-button-prev.swiper-button-white {
@@ -1632,6 +1634,20 @@ button.swiper-pagination-bullet {
   width: 25px;
   height: 25px;
   color: #000;
+  position: absolute;
+  left: 29px;
+}
+
+.swiper-button-prev::before {
+  content: "";
+  background-image: url("../media/cliens/caret-left-solid.svg");
+  background-repeat: no-repeat;
+  display: block;
+  width: 25px;
+  height: 25px;
+  color: #000;
+  position: absolute;
+  left: -11px;
 }
 
 .wr-pircing {
