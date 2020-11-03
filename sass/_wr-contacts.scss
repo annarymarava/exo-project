@@ -1,5 +1,6 @@
 .wr-contacts {
-    margin-top: 65px;
+    padding-top: 110px;
+    padding-bottom: 95px;
 }
 
 .maps-container {
@@ -11,27 +12,37 @@
 }
 
 .contact-info {
-    margin-top: 75px;
-    width: 48%;
-    span {
+    width: 48.5%;
+    h4 {
         font-family: "LatoThin", sans-serif;
         font-size: 20px;
+        margin-bottom: 30px;
     }
 
-    div svg {
+    svg {
         height: 35px;
         color: #2d2929;
     }
 
-    div p {
+    p {
         font-family: "LatoLight", sans-serif;
         font-size: 16px;
+        margin-left: 100px;
+    }
+
+    a {
+        color: #3b3737;
+    }
+
+    a:hover {
+        font-weight: bold;
     }
 }
 
 .contact-container {
     display: flex;
     justify-content: space-between;
+    padding-top: 75px;
 }
 
 .contact-info-phone,
@@ -41,7 +52,6 @@
     margin-bottom: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     padding-left: 16px;
     padding-right: 16px;
@@ -59,17 +69,12 @@
     }
 }
 
-.contact-info-phone,
-.subscribe-name {
-    margin-top: 30px;
-}
-
 .subscribe {
-    margin-top: 75px;
-    width: 48%;
-    span {
+    width: 48.5%;
+    h4 {
         font-family: "LatoThin", sans-serif;
         font-size: 20px;
+        margin-bottom: 30px;
     }
 
     input {
@@ -108,7 +113,6 @@
 }
 
 .subscribe-submit {
-    padding: 0;
     display: flex;
     justify-content: center;
     background-color: #2d2929;
