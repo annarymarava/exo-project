@@ -377,6 +377,10 @@ body {
   overflow-x: hidden;
 }
 
+body.hidden-scroll {
+  overflow: hidden;
+}
+
 .container-custom {
   max-width: 1230px;
   margin: 0 auto;
@@ -518,7 +522,7 @@ button {
   width: 100%;
   height: 100vh;
   position: absolute;
-  right: -100%;
+  right: -200%;
   background-color: transparent;
   z-index: 15;
 }
@@ -544,18 +548,16 @@ button {
 .header-list li {
   width: 100%;
 }
-.header-list a {
-  width: 100%;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  text-align: center;
-  display: block;
-}
 .header-list a:hover {
   background-color: #313131;
 }
 
 .header-link {
+  display: block;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
   color: #fff;
   font-size: 20px;
   text-transform: uppercase;
@@ -575,7 +577,7 @@ button {
 
 .burger-menu.close,
 .header-list-substrate.close {
-  right: -100%;
+  right: -200%;
 }
 
 .wr-home {
@@ -597,7 +599,7 @@ button {
   margin-top: 10px;
   line-height: 23px;
 }
-.wr-home:before {
+.wr-home p::before {
   content: "";
   display: block;
   width: 47px;
@@ -605,10 +607,36 @@ button {
   background-color: #fff;
   border-radius: 7px;
   position: absolute;
-  bottom: 88px;
-  left: 367px;
+  bottom: -15px;
+  left: 0;
 }
 
+@media all and (max-width: 1000px) {
+  .header-logo {
+    font-size: 45px;
+  }
+
+  .wr-home h2 {
+    font-size: 105px;
+  }
+  .wr-home p {
+    font-size: 16px;
+  }
+}
+@media all and (max-width: 600px) {
+  .header-link {
+    font-size: 18px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+@media all and (max-width: 400px) {
+  .header-link {
+    font-size: 14px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+}
 .about-us {
   padding-top: 80px;
 }

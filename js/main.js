@@ -1,30 +1,29 @@
 
-let burger_icon = document.querySelector('.burger-icon');
-let burger_menu = document.querySelector('.burger-menu');
-let back = document.querySelector('body');
-let header_list = document.querySelector('.header-list');
-let header_list_substrate = document.querySelector('.header-list-substrate');
+let burgerIcon = document.querySelector('.burger-icon');
+let burgerMenu = document.querySelector('.burger-menu');
+let body = document.querySelector('body');
+let headerListSubstrate = document.querySelector('.header-list-substrate');
 
 
-burger_icon.onclick = function () {
-    burger_icon.classList.toggle('active');
-    burger_menu.classList.toggle('active');
-    header_list_substrate.classList.toggle('active');
-    burger_icon.classList.remove('close');
-    burger_menu.classList.remove('close');
-    header_list_substrate.classList.remove('close');
-    back.classList.toggle('lock');
-}
+burgerIcon.addEventListener('click', function() {
+    let htmlWidth = document.documentElement.clientWidth;
+    let bodyPadding = window.innerWidth - htmlWidth;
+    burgerMenu.classList.remove('close');
+    headerListSubstrate.classList.remove('close');
+    body.style.paddingRight = bodyPadding + 'px';
+    body.classList.add('hidden-scroll');
+    burgerMenu.classList.add('active');
+    headerListSubstrate.classList.add('active');
+});
 
-header_list_substrate.onclick = function () {
-  burger_icon.classList.toggle('close');
-  burger_menu.classList.toggle('close');
-  header_list_substrate.classList.toggle('close');
-  burger_icon.classList.remove('active');
-  burger_menu.classList.remove('active');
-  header_list_substrate.classList.remove('active');
-  back.classList.toggle('lock');
-}
+headerListSubstrate.addEventListener('click', function() {
+  burgerMenu.classList.remove('active');
+  headerListSubstrate.classList.remove('active');
+  body.classList.remove('hidden-scroll');
+  body.style.paddingRight = 0;
+  burgerMenu.classList.add('close');
+  headerListSubstrate.classList.add('close');
+});
 
 $(window).scroll(function(){
   if ($(this).scrollTop() > 750) {
@@ -41,17 +40,6 @@ $(window).scroll(function(){
       $('.header-list-substrate').removeClass('fixed');
   }
 });
-
-// // header_list.onclick = function () {
-// //     header_list.classList.remove('active');
-// //     back.classList.toggle('lock');
-// // }
-
-// // back.onclick = function () {
-// //     header_list.classList.remove('active');
-// //     back.classList.toggle('lock');
-// // }
-
 
 var swiper = new Swiper('.swiper-container-team', {
     slidesPerView: 4,

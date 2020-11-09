@@ -6,6 +6,10 @@ body {
     overflow-x: hidden;
 }
 
+body.hidden-scroll {
+    overflow: hidden;
+}
+
 .container-custom {
     max-width: 1230px;
     margin: 0 auto;
