@@ -69,3 +69,30 @@ footer {
     .footer-link-facebook:hover svg {
             color: #2f468f;
             }
+
+
+ @media all and (max-width: 700px ) {
+    .footer-link { 
+        svg {
+            height: 25px;
+        }
+        a {
+            padding: 5px 0 5px 10px;
+        }  
+    }
+
+    .footer-text {
+        font-size: 14px;
+    
+        svg {
+            height: 14px;
+        }
+    }
+}
+
+@media all and (max-width: 450px ) {
+    .wr-footer {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}

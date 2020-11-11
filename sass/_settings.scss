@@ -86,3 +86,9 @@ button {
             }
         }
     }
+
+    @media all and (max-width: 350px ) {
+        .container-custom {
+            padding: 0 15px;
+        }
+    }

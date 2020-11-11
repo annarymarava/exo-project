@@ -1,6 +1,6 @@
 .wr-clients {
     padding-top: 125px;
-
+}
     .hipster-says {
         display: flex;
         flex-direction: column;
@@ -21,16 +21,15 @@
             letter-spacing: 1.5px;
             line-height: 35px;
             text-align: center;
+            margin-bottom: 60px;
         }
     
         span {
             font-family: "LatoLight", sans-serif;
             font-weight: 300;
             font-size: 23px;
-            margin-top: 60px;
         }
     }
-}
 
 .slider-container-logos {
     display: flex;
@@ -101,4 +100,59 @@
 
 .logo-opacity:hover  {
     opacity: 1;
+}
+
+@media all and (max-width: 800px ) {
+    .hipster-says {
+        padding: 40px 50px 40px;
+    }
+}
+
+@media all and (max-width: 700px ) {
+    .hipster-says {
+        padding: 40px;
+
+        svg {
+            height: 30px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 15px;
+            margin-bottom: 30px;
+        }
+
+        span {
+            font-size: 20px;
+        }
+    }
+}
+
+@media all and (max-width: 550px ) {
+    .hipster-says {
+        padding: 30px;
+
+        p {
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        span {
+            font-size: 18px;
+        }
+    }
+}
+
+@media all and (max-width: 450px ) {
+    .hipster-says {
+        padding: 15px;
+    }
+}
+
+@media all and (max-width: 400px ) {
+    .hipster-says {
+        p {
+            font-size: 12px;
+        }
+    }
 }
