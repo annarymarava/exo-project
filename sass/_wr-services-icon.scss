@@ -35,6 +35,7 @@
         font-family: "LatoBold", sans-serif;
         color: #fff;
         position: relative;
+        font-size: 17px;
 
         &:after {
             content: "";
@@ -56,4 +57,46 @@
     }
 
 
+}
+
+
+@media all and (max-width: 800px ) {
+    .services-container {
+        flex-direction: column;
+        padding-top: 50px;
+        padding-bottom: 58px;
+    }
+
+    .services-container-icon {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 25px;
+
+        button::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+@media all and (max-width: 600px ) {
+    .services-container-icon {
+        p,
+        button {
+            font-size: 14px;
+        }
+
+        svg {
+            height: 70px;
+        }
+    }
+}
+
+@media all and (max-width: 600px ) {
+    .services-container-icon {
+        svg {
+            height: 50px;
+        }
+    }
 }

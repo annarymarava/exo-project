@@ -25,21 +25,11 @@ headerListSubstrate.addEventListener('click', function() {
   headerListSubstrate.classList.add('close');
 });
 
-$(window).scroll(function(){
-  if ($(this).scrollTop() > 750) {
-      $('.header-body').addClass('fixed');
-  } else {
-      $('.header-body').removeClass('fixed');
-  }
-});
-
-$(window).scroll(function(){
-  if ($(this).scrollTop() > 750) {
-      $('.header-list-substrate').addClass('fixed');
-  } else {
-      $('.header-list-substrate').removeClass('fixed');
-  }
-});
+window.addEventListener('scroll', function() {
+  let headerBody = document.querySelector('.header-body');
+  headerListSubstrate.classList.toggle('fixed', window.scrollY > 350);
+  headerBody.classList.toggle('fixed', window.scrollY > 350);
+})
 
 var swiper = new Swiper('.swiper-container-team', {
     slidesPerView: 4,

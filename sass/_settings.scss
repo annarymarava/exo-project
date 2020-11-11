@@ -64,3 +64,25 @@ button {
     }
 
 }
+
+    .header {
+        padding-top: 60px;
+    }
+
+    @media all and (max-width: 700px ) {
+        .section-header {  
+            h3 {
+                font-size: 35px;
+            }
+        
+            p {
+                font-size: 14px;
+            }
+
+            &:before {
+                width: 35px;
+                height: 4px;
+                bottom: -25px;
+            }
+        }
+    }
