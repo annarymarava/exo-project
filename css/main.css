@@ -1407,6 +1407,13 @@ button {
   align-items: center;
 }
 
+@media all and (max-width: 1250px) {
+  .photo-slide::before {
+    content: "";
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 /**
  * Swiper 6.3.4
  * Most modern mobile touch slider and framework with hardware accelerated transitions
