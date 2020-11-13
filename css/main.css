@@ -369,12 +369,15 @@ template {
   src: url("../fonts/Lato-Thin.woff") format("woff"), url("../fonts/Lato-Thin.woff2") format("woff2"), url("../fonts/Lato-Thin.ttf") format("ttf");
   font-weight: 100;
 }
+html, body {
+  overflow-x: hidden;
+}
+
 body {
   background-color: #fff;
   color: #3b3737;
   font-family: "LatoRegular", sans-serif;
   font-weight: 400;
-  overflow-x: hidden;
 }
 
 body.hidden-scroll {

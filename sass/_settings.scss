@@ -1,9 +1,12 @@
+html, body {
+    overflow-x: hidden;
+}
+
 body {
     background-color: #fff;
     color: #3b3737;
     font-family: "LatoRegular", sans-serif;
     font-weight: 400;
-    overflow-x: hidden;
 }
 
 body.hidden-scroll {
