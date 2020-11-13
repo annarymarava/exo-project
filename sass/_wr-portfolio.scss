@@ -29,7 +29,7 @@
 
 .photo-portfolio-container {
     display: grid;
-    grid-template-rows: 17fr 2fr 17fr;
+    grid-template-rows: 16fr 2fr 16fr;
     grid-template-columns: 10fr 11fr 12fr 16fr 10fr;
 
 
@@ -49,8 +49,8 @@
         height: 100%;
         object-fit: cover;
     }
-
-    div::before {
+}
+    .photo-portfolio::before {
         content: "";
         display: block;
         background-image: url("../media/portfolio/search-solid.svg");
@@ -67,7 +67,7 @@
     }
 
     
-    div::after {
+    .photo-portfolio::after {
         content: "";
         display: block;
         position: absolute;
@@ -81,7 +81,7 @@
         background-color: #000;
     }
     
-    div:hover {
+    .photo-portfolio:hover {
         transform: scale(1.2); 
         z-index: 10;
         
@@ -95,6 +95,29 @@
             opacity: 0.3;
         }
     }
+
+
+.photo-portfolio.visual-sorting {
+    filter: grayscale(0.5) blur(10px);
+    a {
+        pointer-events: none;
+        cursor: default;
+    }
+
+    &:hover {
+        transform: scale(1); 
+
+        &:before {
+            opacity: 0;
+        }
+
+        &:after {
+            opacity: 0;
+        }
+
+    }
+
+
 }
 
 .photo-portfolio-owl {

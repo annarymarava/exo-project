@@ -111,6 +111,46 @@
     opacity: 1;
 }
 
+@media all and (max-width: 1700px ) {
+    .swiper-button-prev {
+        left: 10%;
+    }
+
+    .swiper-button-next {
+        right: 10%;
+    }
+}
+
+@media all and (max-width: 1500px ) {
+    .swiper-button-prev {
+        left: 7%;
+    }
+
+    .swiper-button-next {
+        right: 7%;
+    }
+}
+
+@media all and (max-width: 1400px ) {
+    .swiper-button-prev {
+        left: 4%;
+    }
+
+    .swiper-button-next {
+        right: 4%;
+    }
+}
+
+@media all and (max-width: 1300px ) {
+    .swiper-button-prev {
+        left: 0;
+    }
+
+    .swiper-button-next {
+        right: 0;
+    }
+}
+
 @media all and (max-width: 800px ) {
     .hipster-says {
         padding: 40px 50px 40px;

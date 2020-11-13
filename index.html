@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Document</title>
+    <title>exo</title>
 </head>
 
 <body>
@@ -174,15 +174,15 @@
         </div>
         <div class="portfolio-container">
             <ul class="categories">
-                <li><button>Art</button> </li>
-                <li><button>Mystery</button></li>
-                <li><button>Illusion</button></li>
-                <li><button>Travel</button></li>
-                <li><button>Paintings</button></li>
-                <li><button>Photography</button></li>
+                <li><button class="active-sorting" id="all">All</button> </li>
+                <li><button id="mystery">Mystery</button></li>
+                <li><button id="illusion">Illusion</button></li>
+                <li><button id="travel">Travel</button></li>
+                <li><button id="paintings">Paintings</button></li>
+                <li><button id="photography">Photography</button></li>
             </ul>
             <div class="photo-portfolio-container">
-                <div class="photo-portfolio-owl">
+                <div class="photo-portfolio-owl photo-portfolio"  data-sorting="mystery">
                     <a class="photo-portfolio-owl-link" href="">
                         <picture>
                             <source srcset="./media/portfolio/owl@3x.jpg 3x, ./media/portfolio/owl@2x.jpg 2x">
@@ -190,7 +190,7 @@
                         </picture>
                     </a>
                 </div>
-                <div class="photo-portfolio-wolf">
+                <div class="photo-portfolio-wolf photo-portfolio" data-sorting="photography">
                     <a class="photo-portfolio-wolf-link" href="">
                         <picture>
                             <source srcset="./media/portfolio/wolf@3x.jpg 3x, ./media/portfolio/wolf@2x.jpg 2x">
@@ -198,7 +198,7 @@
                         </picture>
                     </a>
                 </div>
-                <div class="photo-portfolio-dog">
+                <div class="photo-portfolio-dog photo-portfolio" data-sorting="photography">
                     <a class="photo-portfolio-dog-link" href="">
                         <picture>
                             <source srcset="./media/portfolio/dog@3x.jpg 3x, ./media/portfolio/dog@2x.jpg 2x">
@@ -206,7 +206,7 @@
                         </picture>
                     </a>
                 </div>
-                <div class="photo-portfolio-girl">
+                <div class="photo-portfolio-girl photo-portfolio" data-sorting="illusion">
                     <a class="photo-portfolio-girl-link" href="">
                         <picture>
                             <source srcset="./media/portfolio/girl@3x.jpg 3x, ./media/portfolio/girl@2x.jpg 2x">
@@ -214,7 +214,7 @@
                         </picture>
                     </a>
                 </div>
-                <div class="photo-portfolio-cup">
+                <div class="photo-portfolio-cup photo-portfolio" data-sorting="paintings">
                     <a class="photo-portfolio-cup-link" href="">
                         <picture>
                             <source srcset="./media/portfolio/cup@3x.jpg 3x, ./media/portfolio/cup@2x.jpg 2x">
@@ -222,7 +222,7 @@
                         </picture>
                     </a>
                 </div>
-                <div class="photo-portfolio-road">
+                <div class="photo-portfolio-road photo-portfolio" data-sorting="travel">
                     <a class="photo-portfolio-road-link" href="">
                         <picture>
                             <source srcset="./media/portfolio/road@3x.jpg 3x, ./media/portfolio/road@2x.jpg 2x">
@@ -230,7 +230,7 @@
                         </picture>
                     </a>
                 </div>
-                <div class="photo-portfolio-grapes">
+                <div class="photo-portfolio-grapes photo-portfolio" data-sorting="paintings">
                     <a class="photo-portfolio-grapes-link" href="">
                         <picture>
                             <source srcset="./media/portfolio/grapes@3x.jpg 3x, ./media/portfolio/grapes@2x.jpg 2x">
@@ -238,7 +238,7 @@
                         </picture>
                     </a>
                 </div>
-                <div class="photo-portfolio-bird">
+                <div class="photo-portfolio-bird photo-portfolio" data-sorting="photography">
                     <a class="photo-portfolio-bird-link" href="">
                         <picture>
                             <source srcset="./media/portfolio/bird@3x.jpg 3x, ./media/portfolio/bird@2x.jpg 2x">

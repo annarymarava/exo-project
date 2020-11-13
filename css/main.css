@@ -914,7 +914,7 @@ button {
   .ellipse {
     margin-left: 135px;
     margin-right: 135px;
-    margin-top: 5px;
+    padding-bottom: 5px;
   }
 }
 @media all and (max-width: 1150px) {
@@ -1094,7 +1094,7 @@ button {
 
 .photo-portfolio-container {
   display: grid;
-  grid-template-rows: 17fr 2fr 17fr;
+  grid-template-rows: 16fr 2fr 16fr;
   grid-template-columns: 10fr 11fr 12fr 16fr 10fr;
 }
 .photo-portfolio-container div {
@@ -1111,7 +1111,8 @@ button {
   height: 100%;
   object-fit: cover;
 }
-.photo-portfolio-container div::before {
+
+.photo-portfolio::before {
   content: "";
   display: block;
   background-image: url("../media/portfolio/search-solid.svg");
@@ -1126,7 +1127,8 @@ button {
   opacity: 0;
   cursor: pointer;
 }
-.photo-portfolio-container div::after {
+
+.photo-portfolio::after {
   content: "";
   display: block;
   position: absolute;
@@ -1139,16 +1141,34 @@ button {
   cursor: pointer;
   background-color: #000;
 }
-.photo-portfolio-container div:hover {
+
+.photo-portfolio:hover {
   transform: scale(1.2);
   z-index: 10;
 }
-.photo-portfolio-container div:hover:before {
+.photo-portfolio:hover:before {
   opacity: 1;
   z-index: 15;
 }
-.photo-portfolio-container div:hover:after {
+.photo-portfolio:hover:after {
   opacity: 0.3;
+}
+
+.photo-portfolio.visual-sorting {
+  filter: grayscale(0.5) blur(10px);
+}
+.photo-portfolio.visual-sorting a {
+  pointer-events: none;
+  cursor: default;
+}
+.photo-portfolio.visual-sorting:hover {
+  transform: scale(1);
+}
+.photo-portfolio.visual-sorting:hover:before {
+  opacity: 0;
+}
+.photo-portfolio.visual-sorting:hover:after {
+  opacity: 0;
 }
 
 .photo-portfolio-owl {
@@ -2194,6 +2214,42 @@ button.swiper-pagination-bullet {
   opacity: 1;
 }
 
+@media all and (max-width: 1700px) {
+  .swiper-button-prev {
+    left: 10%;
+  }
+
+  .swiper-button-next {
+    right: 10%;
+  }
+}
+@media all and (max-width: 1500px) {
+  .swiper-button-prev {
+    left: 7%;
+  }
+
+  .swiper-button-next {
+    right: 7%;
+  }
+}
+@media all and (max-width: 1400px) {
+  .swiper-button-prev {
+    left: 4%;
+  }
+
+  .swiper-button-next {
+    right: 4%;
+  }
+}
+@media all and (max-width: 1300px) {
+  .swiper-button-prev {
+    left: 0;
+  }
+
+  .swiper-button-next {
+    right: 0;
+  }
+}
 @media all and (max-width: 800px) {
   .hipster-says {
     padding: 40px 50px 40px;

@@ -74,3 +74,38 @@ var swiper = new Swiper('.swiper-container-pircing', {
     999: { slidesPerView: 3}
   }
 });
+
+let btnsCategories = document.querySelector('.categories');
+
+let removeClass = function(arr, className){
+  arr
+  .filter(btn => btn.classList.contains(className))
+  .map(btn => btn.classList.remove(className));
+};
+
+btnsCategories.addEventListener('click', function(e) {
+    if (!e.target.closest('li')) return;
+    let btn = e.target.closest('button');
+    if (btn.classList.contains('active-sorting')) return;
+    let btns = document.querySelectorAll('.categories button');
+
+
+let arrBtns = Array.prototype.slice.call(btns);
+
+    removeClass(arrBtns, 'active-sorting');
+
+    btn.classList.add('active-sorting');
+
+    let btnId = btn.id;
+    let photoPortfolio = document.querySelectorAll('.photo-portfolio')
+    let arrPhotoPortfolio = Array.prototype.slice.call(photoPortfolio);
+
+    removeClass(arrPhotoPortfolio, 'visual-sorting');
+    if (btnId == 'all') return;
+
+    arrPhotoPortfolio
+    .filter(photo => (photo.dataset.sorting != btnId))
+    .map(photo => photo.classList.add('visual-sorting'));
+});
+
+
