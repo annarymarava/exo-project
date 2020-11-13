@@ -479,9 +479,10 @@ button {
   background-color: #2d2929;
   top: 0;
   left: 0;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 5px;
+  padding: 5px 25px;
+  box-sizing: border-box;
 }
 
 .header {
@@ -545,7 +546,18 @@ button {
   width: 100%;
   height: 100vh;
   position: absolute;
-  right: -100%;
+  top: -100%;
+  left: 0;
+  background-color: transparent;
+  z-index: 15;
+}
+
+.header-list-substrate.fixed {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: -100vh;
+  left: 0;
   background-color: transparent;
   z-index: 15;
 }
@@ -556,12 +568,12 @@ button {
   z-index: 20;
   height: 100vh;
   width: 29%;
-  right: -100%;
+  top: -100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  transition: 0.3s;
+  transition: 0.6s;
 }
 
 .header-list {
@@ -598,9 +610,12 @@ button {
   top: 0;
 }
 
-.burger-menu.close,
+.burger-menu.close {
+  top: -100%;
+}
+
 .header-list-substrate.close {
-  right: -100%;
+  top: -100vh;
 }
 
 .wr-home {
@@ -1407,6 +1422,10 @@ button {
   align-items: center;
 }
 
+.swiper-pagination-bullet {
+  outline: none;
+}
+
 @media all and (max-width: 1250px) {
   .photo-slide::before {
     content: "";
@@ -1579,6 +1598,7 @@ button {
 }
 
 .swiper-button-next:after, .swiper-button-prev:after {
+  display: none;
   font-family: swiper-icons;
   font-size: var(--swiper-navigation-size);
   text-transform: none !important;
@@ -1589,7 +1609,7 @@ button {
 }
 
 .swiper-button-prev, .swiper-container-rtl .swiper-button-next {
-  left: 10px;
+  left: 12%;
   right: auto;
 }
 
@@ -1599,7 +1619,7 @@ button {
 }
 
 .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
-  right: 10px;
+  right: 12%;
   left: auto;
 }
 
@@ -2068,6 +2088,10 @@ button.swiper-pagination-bullet {
   padding-top: 125px;
 }
 
+.swiper-container-next-prev {
+  position: relative;
+}
+
 .hipster-says {
   display: flex;
   flex-direction: column;
@@ -2132,7 +2156,6 @@ button.swiper-pagination-bullet {
   height: 25px;
   color: #000;
   position: absolute;
-  left: 29px;
 }
 
 .swiper-button-prev::before {
@@ -2144,7 +2167,11 @@ button.swiper-pagination-bullet {
   height: 25px;
   color: #000;
   position: absolute;
-  left: -11px;
+}
+
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
+  outline: none;
 }
 
 .logo-opacity {
@@ -2295,62 +2322,39 @@ button.swiper-pagination-bullet {
   letter-spacing: 1.2px;
 }
 
-@media all and (max-width: 1000px) {
-  .swiper-container-pircing {
-    width: 100%;
-    height: 100%;
-    padding-top: 200px;
-    padding-bottom: 50px;
-  }
-  .swiper-container-pircing .swiper-slide {
-    text-align: center;
-    font-size: 18px;
-    background: #fff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-
-  .pay-pack-block {
-    flex-direction: column;
-  }
-  .pay-pack-block .pay-pack {
-    width: 300px;
-  }
-  .pay-pack-block button {
-    width: 304px;
-  }
+.swiper-container-pircing {
+  width: 100%;
+  height: 100%;
+  padding-top: 200px;
+  padding-bottom: 50px;
 }
-@media all and (max-width: 500px) {
-  .pay-pack-block button {
-    width: 274px;
-  }
-  .pay-pack-block .pay-pack {
-    width: 270px;
-  }
-  .pay-pack-block .pay-pack h3 {
-    font-size: 25px;
-    margin-bottom: 30px;
-  }
-  .pay-pack-block .pay-pack li {
-    font-size: 14px;
-    margin-bottom: 10px;
-  }
-
-  .pay-sum {
-    height: 150px;
-    width: 150px;
-  }
+.swiper-container-pircing .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
 }
+.swiper-container-pircing .pay-pack-block {
+  flex-direction: column;
+}
+.swiper-container-pircing .pay-pack-block .pay-pack {
+  width: 300px;
+}
+.swiper-container-pircing .pay-pack-block button {
+  width: 304px;
+}
+
 .wr-contacts {
   padding-top: 110px;
   padding-bottom: 95px;
@@ -2480,7 +2484,7 @@ button.swiper-pagination-bullet {
 
 .subscribe-name input:focus,
 .subscribe-email input:focus {
-  outline: auto 0;
+  outline: none;
 }
 
 @media all and (max-width: 1200px) {

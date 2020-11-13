@@ -137,10 +137,9 @@
 
 .subscribe-name,
 .subscribe-email {
-    input {
-        &:focus {
-            outline: auto 0;
-        }
+    input:focus {
+            outline: none;
+        
     }
 }
 

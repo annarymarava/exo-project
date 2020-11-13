@@ -181,6 +181,9 @@
   }
  }
 
+ .swiper-pagination-bullet {
+     outline: none;
+ }
 
  @media all and (max-width: 1250px ) {
     .photo-slide::before {
