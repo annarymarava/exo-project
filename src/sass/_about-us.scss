@@ -1,0 +1,165 @@
+.about-us {
+    padding-top: 80px;
+}
+
+.section-article-about {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 183px;
+}
+
+.section-photo-about {
+        width: 49%;
+        margin-right: 30px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+}
+
+.section-text-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 49%;
+    padding-bottom: 5px;
+
+    p {
+        color: #2d2929;
+        font-size: 15px;
+        margin-bottom: 23px;
+        letter-spacing: 1.1px;
+        font-family: "LatoRegular", sans-serif;
+        font-weight: 400;
+        line-height: 48px;
+    } 
+
+    button {
+        width: 160px;
+        height: 50px;
+        border: 1px solid #2c2928;
+        border-radius: 7px;
+    }
+
+    button:hover {
+        background-color: #2d2929;
+        color: #fff;
+        border: none;
+    }
+}
+
+.appeal-company {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 125px;
+    border: 1px solid #a8a5a5;
+    padding: 60px 100px 65px;
+
+    svg {
+        height: 60px;
+        margin-bottom: 43px;
+    }
+
+    p {
+        font-family: "LatoLightItalic", sans-serif;
+        font-weight: 300;
+        font-size: 17px;
+        letter-spacing: 1.5px;
+        line-height: 32px;
+        text-align: center;
+    }
+
+    span {
+        font-family: "LatoBlack", sans-serif;
+        font-weight: 900;
+        font-size: 19px;
+        margin-top: 55px;
+    }
+}
+
+
+@media all and (max-width: 1250px ) {
+    .section-text-about {
+        p {
+            line-height: 40px;
+        }
+    }
+}
+
+
+@media all and (max-width: 1150px ) {
+    .section-text-about {
+        p {
+            line-height: 33px;
+        }
+    }
+}
+
+@media all and (max-width: 1080px ) {
+    .section-photo-about {
+        width: 45%;
+    }
+}
+
+@media all and (max-width: 1000px ) {
+    .section-article-about {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    .section-text-about {
+        width: 100%;
+
+        p {
+            line-height: 40px;
+            text-align: center;
+        }
+
+        button {
+            margin: 0 auto;
+        }
+    }
+
+    .section-photo-about {
+        width: 100%;
+    }
+
+    .appeal-company {
+        margin-top: 50px;
+        padding: 40px 80px 45px;
+    }
+}
+
+@media all and (max-width: 750px ) {
+    .section-article-about {
+        margin-top: 80px;
+    }
+
+    .appeal-company {
+        padding: 40px 50px 45px;
+            p {
+                font-size: 15px;
+            }
+
+            span {
+                font-size: 17px;   
+            }
+    }
+}
+
+@media all and (max-width: 600px ) {
+    .appeal-company {
+        padding: 30px 30px 35px;
+    }
+}
+
+@media all and (max-width: 450px ) {
+    .section-text-about {
+        p {
+            line-height: 30px;
+        }
+    }
+}

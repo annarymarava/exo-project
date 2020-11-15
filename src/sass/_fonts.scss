@@ -1,0 +1,48 @@
+@font-face {
+    font-family: "LatoBlack";
+    src: url("../fonts/Lato-Black.woff") format("woff"),
+    url("../fonts/Lato-Black.woff2") format("woff2"),
+    url("../fonts/Lato-Black.ttf") format("ttf");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "LatoLight";
+    src: url("../fonts/Lato-Light.woff") format("woff"),
+    url("../fonts/Lato-Light.woff2") format("woff2"), 
+    url("../fonts/Lato-Light.ttf") format("ttf");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "LatoRegular";
+    src: url("../fonts/Lato-Regular.woff") format("woff"),
+    url("../fonts/Lato-Regular.woff2") format("woff2"),
+    url("../fonts/Lato-Regular.ttf") format("ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "LatoBold";
+    src: url("../fonts/Lato-Bold.woff") format("woff"),
+    url("../fonts/Lato-Bold.woff2") format("woff2"),
+    url("../fonts/Lato-Bold.ttf") format("ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "LatoLightItalic";
+    src: url("../fonts/Lato-LightItalic.woff") format("woff"),
+    url("../fonts/Lato-LightItalic.woff2") format("woff2"),
+    url("../fonts/Lato-LightItalic.ttf") format("ttf");
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "LatoThin";
+    src: url("../fonts/Lato-Thin.woff") format("woff"),
+    url("../fonts/Lato-Thin.woff2") format("woff2"),
+    url("../fonts/Lato-Thin.ttf") format("ttf");
+    font-weight: 100;
+}

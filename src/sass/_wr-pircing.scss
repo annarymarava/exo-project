@@ -1,0 +1,135 @@
+.wr-pircing {
+    padding-top: 100px;
+}
+
+.pircing-pay-blocks {
+    margin-top: 235px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pay-pack-block {
+    width: 31.5%;  
+    position: relative;
+
+    button {
+        width: 100%;
+        height: 80px;
+        background-color: #464141;
+        color: #fff;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            border-radius: 5px;
+            font-family: "LatoLight", sans-serif;
+            font-size: 20px;
+        }
+
+        svg {
+            height: 25px;
+            padding-left: 15px;
+        }
+
+        &:hover {
+            background-color: #fff;
+            border: 1px solid #464141;
+
+            span,
+            svg {
+                color: #464141;
+            }
+        } 
+    }
+
+}
+
+.pay-sum {
+    display: flex;
+    height: 194px;
+    width: 194px;
+    border-radius: 50%;
+    background-color: #464141;
+    position: absolute;
+    top: -18%;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-family: "LatoLight", sans-serif;
+    font-size: 35px;
+}
+
+.pay-pack {
+    padding-top: 125px;
+    padding-bottom: 30px;
+    border: 2px solid #464141;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h3 {
+        font-family: "LatoLight", sans-serif;
+        font-size: 30px;
+        margin-bottom: 73px;
+        letter-spacing: 1.2px;
+    }
+
+    ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li {
+        font-family: "LatoRegular", sans-serif;
+        font-size: 18px;
+        margin-bottom: 30px;
+        letter-spacing: 1.2px;
+    }
+
+}
+
+.swiper-container-pircing {
+    width: 100%;
+    height: 100%;
+    padding-top: 200px;
+    padding-bottom: 50px;
+    
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+  }
+  
+  .pay-pack-block {
+    flex-direction: column;
+
+    .pay-pack {
+        width: 300px;
+    }
+
+    button {
+        width: 304px;
+    }
+    }
+ }
+
