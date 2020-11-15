@@ -133,3 +133,9 @@
     }
  }
 
+
+ @media all and (min-width: 1000px ) {
+    .swiper-pagination {
+        display: none;
+    }
+}

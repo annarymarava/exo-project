@@ -425,15 +425,15 @@ body {
   overflow-x: hidden;
 }
 
+html.hidden-scroll {
+  overflow-y: hidden;
+}
+
 body {
   background-color: #fff;
   color: #3b3737;
   font-family: "LatoRegular", sans-serif;
   font-weight: 400;
-}
-
-body.hidden-scroll {
-  overflow: hidden;
 }
 
 .container-custom {
@@ -2712,6 +2712,12 @@ footer {
 
 .footer-link-facebook:hover svg {
   color: #2f468f;
+}
+
+@media all and (min-width: 1000px) {
+  .swiper-pagination {
+    display: none;
+  }
 }
 
 @media all and (max-width: 1700px) {
