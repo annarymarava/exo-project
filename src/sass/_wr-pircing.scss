@@ -135,7 +135,10 @@
 
 
  @media all and (min-width: 1000px ) {
-    .swiper-pagination {
-        display: none;
+    .swiper-container-pircing {
+        .swiper-pagination {
+            display: none;
+        }
     }
+
 }
