@@ -123,9 +123,9 @@ btnSubmitSubscribe.addEventListener('click', function () {
   let subscribeName = document.querySelector('#name');
   let subscribeEmail = document.querySelector('#email');
   let errorMessageCorrect = document.querySelector('.error-message-correct');
-  let errorMessageNull= document.querySelector('.error-message-null');
+  let errorMessageNull = document.querySelector('.error-message-null');
   let errorEmailCorrect = document.querySelector('.error-email-correct');
-  let errorEmailNull= document.querySelector('.error-email-null');
+  let errorEmailNull = document.querySelector('.error-email-null');
   errorMessageCorrect.classList.remove('show-error-message');
   errorMessageNull.classList.remove('show-error-message');
   let informationInputName = subscribeName.value;
@@ -134,21 +134,18 @@ btnSubmitSubscribe.addEventListener('click', function () {
   errorEmailNull.classList.remove('show-error-message');
   let emailPattern = (/^([_a-zA-Z-0-9\.]{1})[_a-zA-Z-0-9\.]{3,20}[@]{1}[a-zA-Z]{2,10}[.]{1}[a-zA-Z]{2,5}/g);
   let userNamePattern = (/[^a-zA-Zа-яА-Я]/g);
-  
-  if (!informationInputName) { 
-    errorMessageNull.classList.add('show-error-message') 
+
+  if (!informationInputName) {
+    errorMessageNull.classList.add('show-error-message')
   };
 
-  if (informationInputName.match(userNamePattern)) { 
+  if (informationInputName.match(userNamePattern)) {
     errorMessageCorrect.classList.add('show-error-message')
   };
 
-  if (!informationInputEmail) { 
-    errorEmailNull.classList.add('show-error-message') 
-  };
-  
-  if (!informationInputEmail.match(emailPattern))
-  { 
+  if (!informationInputEmail) {
+    errorEmailNull.classList.add('show-error-message')
+  } else if (!informationInputEmail.match(emailPattern)) {
     errorEmailCorrect.classList.add('show-error-message')
   };
 });
