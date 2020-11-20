@@ -115,4 +115,40 @@ btnsCategories.addEventListener('click', function (e) {
     .map(photo => photo.classList.add('visual-sorting'));
 });
 
+;
 
+let btnSubmitSubscribe = document.querySelector('.btn-submit-subscribe');
+
+btnSubmitSubscribe.addEventListener('click', function () {
+  let subscribeName = document.querySelector('#name');
+  let subscribeEmail = document.querySelector('#email');
+  let errorMessageCorrect = document.querySelector('.error-message-correct');
+  let errorMessageNull= document.querySelector('.error-message-null');
+  let errorEmailCorrect = document.querySelector('.error-email-correct');
+  let errorEmailNull= document.querySelector('.error-email-null');
+  errorMessageCorrect.classList.remove('show-error-message');
+  errorMessageNull.classList.remove('show-error-message');
+  let informationInputName = subscribeName.value;
+  let informationInputEmail = subscribeEmail.value;
+  errorEmailCorrect.classList.remove('show-error-message');
+  errorEmailNull.classList.remove('show-error-message');
+
+  
+  if (!informationInputName) { 
+    errorMessageNull.classList.add('show-error-message') 
+  };
+
+  if (informationInputName.match(/[^a-zA-Zа-яА-Я]/g)) { 
+    errorMessageCorrect.classList.add('show-error-message')
+  };
+
+  if (!informationInputEmail) { 
+    errorEmailNull.classList.add('show-error-message') 
+  };
+  
+  if (informationInputEmail.match
+  ('/^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/u')) 
+  { 
+    errorEmailCorrect.classList.add('show-error-message')
+  };
+});

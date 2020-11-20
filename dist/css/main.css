@@ -2586,6 +2586,7 @@ button.swiper-pagination-bullet {
   padding-left: 16px;
   padding-right: 16px;
   height: 80px;
+  position: relative;
 }
 
 .subscribe-name span,
@@ -2624,6 +2625,28 @@ button.swiper-pagination-bullet {
 
 .subscribe-name input:focus,
 .subscribe-email input:focus {
+  outline: none;
+}
+
+.error-message-correct,
+.error-message-null,
+.error-email-correct,
+.error-email-null {
+  display: none;
+  font-family: "LatoRegular" ,sans-serif;
+  color: red;
+  position: absolute;
+  left: 0;
+  bottom: -20%;
+  font-size: 12px;
+  letter-spacing: 1.2px;
+}
+
+.show-error-message {
+  display: block;
+}
+
+.btn-submit-subscribe:focus {
   outline: none;
 }
 
