@@ -132,13 +132,14 @@ btnSubmitSubscribe.addEventListener('click', function () {
   let informationInputEmail = subscribeEmail.value;
   errorEmailCorrect.classList.remove('show-error-message');
   errorEmailNull.classList.remove('show-error-message');
-
+  let emailPattern = (/^([_a-zA-Z-0-9\.]{1})[_a-zA-Z-0-9\.]{3,20}[@]{1}[a-zA-Z]{2,10}[.]{1}[a-zA-Z]{2,5}/g);
+  let userNamePattern = (/[^a-zA-Zа-яА-Я]/g);
   
   if (!informationInputName) { 
     errorMessageNull.classList.add('show-error-message') 
   };
 
-  if (informationInputName.match(/[^a-zA-Zа-яА-Я]/g)) { 
+  if (informationInputName.match(userNamePattern)) { 
     errorMessageCorrect.classList.add('show-error-message')
   };
 
@@ -146,9 +147,9 @@ btnSubmitSubscribe.addEventListener('click', function () {
     errorEmailNull.classList.add('show-error-message') 
   };
   
-  if (informationInputEmail.match
-  ('/^((([0-9A-Za-z]{1}[-0-9A-z\.]{1,}[0-9A-Za-z]{1})|([0-9А-Яа-я]{1}[-0-9А-я\.]{1,}[0-9А-Яа-я]{1}))@([-A-Za-z]{1,}\.){1,2}[-A-Za-z]{2,})$/u')) 
+  if (!informationInputEmail.match(emailPattern))
   { 
     errorEmailCorrect.classList.add('show-error-message')
   };
 });
+
