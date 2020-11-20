@@ -3278,3 +3278,10 @@ footer {
     padding: 0 15px;
   }
 }
+
+@media all and (orientation: landscape) {
+  .header-link {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}

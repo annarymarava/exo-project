@@ -124,6 +124,8 @@
      justify-content: center;
      align-items: center;
      transition: 0.6s;
+
+
  }
 
 
@@ -151,6 +153,10 @@
     text-transform: uppercase;
     font-family: "LatoLight", sans-serif;
     font-weight: 300;
+    @media all and (orientation: landscape) {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }
 
 .burger-menu.active {
