@@ -113,7 +113,7 @@
 }
 
  .burger-menu {
-     background-color: #000;
+     background-color: #2d2929;
      position: absolute;
      z-index: 20;
      height: 100vh;
@@ -153,7 +153,8 @@
     text-transform: uppercase;
     font-family: "LatoLight", sans-serif;
     font-weight: 300;
-    @media all and (orientation: landscape) {
+
+    @media all and (max-width: 900px) and (orientation: landscape) {
         padding-top: 10px;
         padding-bottom: 10px;
     }

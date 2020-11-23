@@ -13,9 +13,17 @@
     padding: 10px 15px;
     letter-spacing: 1.4px;
     border: 1px solid transparent;
+    border-radius: 3px;
     color: #2d2929;
     font-size: 18px;
- }
+        &:focus {
+            outline: none;
+        }
+    }
+
+    button.active-sorting {
+        outline: auto;
+    }
 
     button:hover {
         border: 1px solid #696969;
@@ -99,6 +107,15 @@
 
 .photo-portfolio.visual-sorting {
     filter: grayscale(0.5) blur(10px);
+
+    &:after {
+        cursor: default;
+    }
+
+    &:before {
+        cursor: default;
+    }
+
     a {
         pointer-events: none;
         cursor: default;

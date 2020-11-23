@@ -150,3 +150,38 @@ btnSubmitSubscribe.addEventListener('click', function () {
   };
 });
 
+const anchors = document.querySelectorAll('a[href*="#"]')
+
+for (let anchor of anchors) {
+ anchor.addEventListener('click', function (e) {
+  e.preventDefault()
+
+  const blockID = anchor.getAttribute('href').substr(1)
+
+  document.getElementById(blockID).scrollIntoView({
+   behavior: 'smooth',
+   block: 'start'
+  })
+ })
+};
+
+$(window).scroll(startCounter);
+
+function startCounter() {
+    if ($(window).scrollTop() > 4890) {
+        $(window).off('scroll', startCounter);
+        $('.counter').each(function() {
+            let $this = $(this);
+            countTo = $this.attr('data-count');
+            $({ countNum: $this.text() }).animate({
+                countNum: countTo
+            }, {
+                duration: 4000,
+                easing: 'linear',
+                step: function() {
+                    $this.text(Math.floor(this.countNum));
+                }
+            });
+        });
+    }
+};

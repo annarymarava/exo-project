@@ -634,7 +634,7 @@ button {
 }
 
 .burger-menu {
-  background-color: #000;
+  background-color: #2d2929;
   position: absolute;
   z-index: 20;
   height: 100vh;
@@ -1018,8 +1018,17 @@ button {
   padding: 10px 15px;
   letter-spacing: 1.4px;
   border: 1px solid transparent;
+  border-radius: 3px;
   color: #2d2929;
   font-size: 18px;
+}
+
+.categories button:focus {
+  outline: none;
+}
+
+.categories button.active-sorting {
+  outline: auto;
 }
 
 .categories button:hover {
@@ -1117,6 +1126,14 @@ button {
 .photo-portfolio.visual-sorting {
   -webkit-filter: grayscale(0.5) blur(10px);
   filter: grayscale(0.5) blur(10px);
+}
+
+.photo-portfolio.visual-sorting:after {
+  cursor: default;
+}
+
+.photo-portfolio.visual-sorting:before {
+  cursor: default;
 }
 
 .photo-portfolio.visual-sorting a {
@@ -2539,10 +2556,10 @@ button.swiper-pagination-bullet {
 .subscribe input {
   width: 100%;
   border: none;
-  font-family: "LatoLightItalic", sans-serif;
-  font-style: italic;
   margin-left: 20px;
   font-size: 20px;
+  font-family: "LatoLightItalic", sans-serif;
+  font-style: italic;
 }
 
 .subscribe input[type="text"]::-webkit-input-placeholder {
@@ -2563,6 +2580,12 @@ button.swiper-pagination-bullet {
 
 .subscribe input[type="text"]::placeholder {
   color: #d1d1d1;
+}
+
+.subscribe input[type="text"] {
+  font-size: 20px;
+  font-family: "LatoLightItalic", sans-serif;
+  font-style: italic;
 }
 
 .subscribe-name,
@@ -2924,6 +2947,13 @@ footer {
   .ellipse {
     margin-left: 75px;
     margin-right: 75px;
+  }
+}
+
+@media all and (max-width: 900px) and (orientation: landscape) {
+  .header-link {
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 }
 
@@ -3299,12 +3329,5 @@ footer {
 @media all and (max-width: 350px) {
   .container-custom {
     padding: 0 15px;
-  }
-}
-
-@media all and (orientation: landscape) {
-  .header-link {
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
 }
